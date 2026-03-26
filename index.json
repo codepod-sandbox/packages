@@ -2,31 +2,31 @@
   "version": 1,
   "packages": {
     "Pillow": {
-      "version": "10.4.0",
+      "version": "10.0.0+codepod.0.2.1",
       "summary": "Python Imaging Library (codepod port)",
       "wasm": null,
-      "wheel": "packages/Pillow/Pillow-10.4.0-py3-none-any.whl",
+      "wheel": "packages/Pillow/Pillow-10.0.0+codepod.0.2.1-py3-none-any.whl",
       "depends": [],
-      "size_bytes": 22631
+      "size_bytes": 22636
     },
     "matplotlib": {
-      "version": "3.8.0",
+      "version": "3.8.0+codepod.0.2.1",
       "summary": "Plotting library (codepod port)",
       "wasm": null,
-      "wheel": "packages/matplotlib/matplotlib-3.8.0-py3-none-any.whl",
+      "wheel": "packages/matplotlib/matplotlib-3.8.0+codepod.0.2.1-py3-none-any.whl",
       "depends": [
         "numpy",
         "Pillow"
       ],
-      "size_bytes": 594341
+      "size_bytes": 594348
     },
     "numpy": {
-      "version": "1.26.4",
+      "version": "1.26.0+codepod.0.2.1",
       "summary": "Numerical computing library (codepod port)",
       "wasm": null,
-      "wheel": "packages/numpy/numpy-1.26.4-py3-none-any.whl",
+      "wheel": "packages/numpy/numpy-1.26.0+codepod.0.2.1-py3-none-any.whl",
       "depends": [],
-      "size_bytes": 120507
+      "size_bytes": 120517
     },
     "numpy-poc": {
       "version": "0.1.0",
