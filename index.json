@@ -1,6 +1,41 @@
 {
   "version": 1,
   "packages": {
+    "Pillow": {
+      "version": "10.4.0",
+      "summary": "Python Imaging Library (codepod port)",
+      "wasm": null,
+      "wheel": "packages/Pillow/Pillow-10.4.0-py3-none-any.whl",
+      "depends": [],
+      "size_bytes": 22631
+    },
+    "matplotlib": {
+      "version": "3.8.0",
+      "summary": "Plotting library (codepod port)",
+      "wasm": null,
+      "wheel": "packages/matplotlib/matplotlib-3.8.0-py3-none-any.whl",
+      "depends": [
+        "numpy",
+        "Pillow"
+      ],
+      "size_bytes": 594341
+    },
+    "numpy": {
+      "version": "1.26.4",
+      "summary": "Numerical computing library (codepod port)",
+      "wasm": null,
+      "wheel": "packages/numpy/numpy-1.26.4-py3-none-any.whl",
+      "depends": [],
+      "size_bytes": 120507
+    },
+    "numpy-poc": {
+      "version": "0.1.0",
+      "summary": "NumPy native bridge proof-of-concept",
+      "wasm": "packages/numpy-poc/numpy-native-0.1.0.wasm",
+      "wheel": "packages/numpy-poc/numpy_poc-0.1.0-py3-none-any.whl",
+      "depends": [],
+      "size_bytes": 109189
+    },
     "tabulate": {
       "version": "0.9.0",
       "summary": "Pretty-print tabular data",
@@ -8,16 +43,6 @@
       "wheel": "packages/tabulate/tabulate-0.9.0-py3-none-any.whl",
       "depends": [],
       "size_bytes": 35252
-    },
-    "numpy-poc": {
-      "version": "0.1.0",
-      "summary": "NumPy native bridge proof-of-concept",
-      "wasm": null,
-      "wheel": "packages/numpy-poc/numpy_poc-0.1.0-py3-none-any.whl",
-      "native_wasm": "packages/numpy-poc/numpy-native-0.1.0.wasm",
-      "native_module_name": "_numpy_native",
-      "depends": [],
-      "size_bytes": 109189
     }
   }
 }
