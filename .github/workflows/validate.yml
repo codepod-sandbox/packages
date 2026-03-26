@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Rebuild index and check for drift
+        run: |
+          python3 scripts/build-index.py
+          git diff --exit-code index.json || {
+            echo "ERROR: index.json is out of date. Run: python3 scripts/build-index.py"
+            exit 1
+          }
+
+      - name: Validate all wheels are pure Python
+        run: python3 scripts/validate-wheels.py
