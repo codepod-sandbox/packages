@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "packages": {
+    "xlsx-tools": {
+      "version": "0.1.0+codepod.0.2.1",
+      "summary": "Excel spreadsheet conversion",
+      "tools": {
+        "xlsx2csv": "packages/xlsx-tools/xlsx2csv.wasm",
+        "csv2xlsx": "packages/xlsx-tools/csv2xlsx.wasm"
+      },
+      "size_bytes": 1363968
+    },
+    "pdf-tools": {
+      "version": "0.1.0+codepod.0.2.1",
+      "summary": "PDF manipulation (info, split, merge)",
+      "tools": {
+        "pdfinfo": "packages/pdf-tools/pdfinfo.wasm",
+        "pdfseparate": "packages/pdf-tools/pdfseparate.wasm",
+        "pdfunite": "packages/pdf-tools/pdfunite.wasm"
+      },
+      "size_bytes": 1572864
+    },
+    "sqlite3": {
+      "version": "0.1.0+codepod.0.2.1",
+      "summary": "SQLite database engine",
+      "tools": {
+        "sqlite3": "packages/sqlite3/sqlite3.wasm"
+      },
+      "size_bytes": 1468006
+    },
+    "sips": {
+      "version": "0.1.0+codepod.0.2.1",
+      "summary": "Image processing (resize, convert, rotate)",
+      "tools": {
+        "sips": "packages/sips/sips.wasm"
+      },
+      "size_bytes": 1572864
+    },
+    "ripgrep": {
+      "version": "0.1.0+codepod.0.2.1",
+      "summary": "Fast regex search (rg)",
+      "tools": {
+        "rg": "packages/ripgrep/rg.wasm"
+      },
+      "size_bytes": 425984
+    }
+  }
+}
